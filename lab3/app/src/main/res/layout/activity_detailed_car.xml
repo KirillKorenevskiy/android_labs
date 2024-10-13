@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedCarActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/AppTheme">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@null"
+                    android:contentDescription="Back"
+                    android:src="@drawable/ic_back_button"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="84dp"
+                    android:layout_marginTop="60dp"
+                    android:text="подробная инфа про один"
+                    android:textColor="@color/white"
+                    android:textSize="23dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="130dp">
+    <TextView
+        android:id="@+id/textCarMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Марка: "
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/textCarModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Модель: "
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/textCarYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Год выпуска: "
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/textCarRun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Пробег: "
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/textDtpCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Город: "
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/textDtpCharacter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Характер ДТП: "
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/textHorsePower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Кол-во л.с.: "
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/textEngineMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Марка двигателя: "
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/textNumOfEngine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Объём двигателя: "
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/textTransmissionType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вид КПП: "
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/textPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Телефон владельца: "
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Почта: "
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/textInstLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ссылка на инст: "
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp"/>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="150dp"
+            android:layout_height="139dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
